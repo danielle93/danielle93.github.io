@@ -59,7 +59,7 @@ li {
     font-weight: 900;
 }
 
-a {
+a:link{
     color: rosybrown;
     font-weight:400
 }
@@ -67,6 +67,15 @@ a {
 a:hover {
   color: #C0B283 ;
   background: none;
+}
+
+a:visited {
+   color: rosybrown;
+   text-decoration: none;
+}
+
+a:active{
+    background:none;   
 }
 
 button {
