@@ -18,7 +18,11 @@ body {
 .color-3 {
     
     background: #C0B283;
-    DCD0C0
+}
+
+.color-4 {
+    
+    background: rosybrown;
 }
 
 
@@ -50,7 +54,7 @@ li {
 }
 
 .navlink {
-    color: #000;
+    color: #373737;
     text-decoration: none;
     font-weight: 900;
 }
@@ -64,8 +68,6 @@ a:hover {
   color: #C0B283 ;
   background: none;
 }
-
-
 
 button {
     background-color: #C0B283;
