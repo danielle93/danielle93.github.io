@@ -80,12 +80,23 @@ a:active{
 
 button {
     background-color: #C0B283;
-    color: #F4F4F4
+    color: #F4F4F4;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 6px;
 }
 
 button:hover {
     background-color: #373737 ;
-    color: #C0B283;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 6px;
 }
 
 /* Typography */
