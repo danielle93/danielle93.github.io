@@ -49,8 +49,12 @@ body {
 
 
 /* Navigation */
-li {
-    list-style-type: none;
+
+body li {
+
+  display: inline;
+  list-style-type: none;
+  margin-left: 15%;
 }
 
 .navlink {
