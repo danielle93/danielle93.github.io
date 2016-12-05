@@ -9,6 +9,10 @@
 
 /*-------------------------Styling------------------------------------*/
 
+nav a{
+    text-decoration: none;
+}
+
 p {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
@@ -23,8 +27,16 @@ h1{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 2.4em;
-    color: #373737;
-    
+    color: #373737;  
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: -.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #373737;  
 }
 
 .navlink {
@@ -32,18 +44,7 @@ h1{
     color: #373737;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.2em;
-}
-
-a {
-    color: #C0B283;
-    font-weight:400;
-    transition: color .5s;
-}
-
-a:hover {
-  color: rosybrown;
-  background: none;
+    font-size: 1.1em;
 }
 
 a:active{
@@ -63,21 +64,6 @@ a:active{
     margin:1em 0 1em 0;
 }
 
-.arrow{
-    min-height: 30px;
-    min-width: 30px;
-    transform: rotate(90deg);
-    width: 4%;
-    height: 4%;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    
-   -webkit-animation: blink 5s infinite; /* Safari 4+ */
-      -moz-animation: blink 5s infinite; /* Fx 5+ */
-        -o-animation: blink 5s infinite; /* Opera 12+ */
-           animation: blink 5s infinite; /* IE 10+, Fx 29+ */
-}
-
 p.footer{
     font-size: .9em;
 }
@@ -87,6 +73,43 @@ p.footer{
     height: 60%;
     margin-left: .5em;
 }
+
+.top{
+        margin-top: 0;
+    }
+
+/*------------------------Transitions---------------------------------*/
+/*First Frame*/
+#portfolio {
+    color: #C0B283;
+    font-weight:700;
+    transition: color .5s;
+}
+
+/*Second Frame*/
+#portfolio:hover {
+  color: #373737;
+  background: none;
+}
+
+
+
+/*First Frame*/
+a {
+    color: #C0B283;
+    font-weight:400;
+    transition: color .5s;
+}
+
+/*Second Frame*/
+a:hover {
+  color: rosybrown;
+  background: none;
+}
+
+
+
+
 
 /*--------------------------Layout------------------------------------*/
 
@@ -100,17 +123,8 @@ p.footer{
     padding: 10px;
      }
 
-
 nav {
     flex-wrap: nowrap;
-}
-
-
-.row {
-/*    background: #ccc;*/
-    display: flex;
-    flex-flow: row ;
-    justify-content: space-around; 
 }
 
 .content {
@@ -121,6 +135,13 @@ nav {
     align-items: center;
 }
 
+.row {
+/*    background: #ccc;*/
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-around; 
+}
+
 .col {
     display: block;
 /*    background: chartreuse;*/
@@ -128,10 +149,32 @@ nav {
 }
 
 img .col{
-    background: chartreuse;
+/*    background: chartreuse;*/
     text-decoration: none;
     flex: 1 600px;
-  
+}
+
+.about, .tldr{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+main{
+    background: #ededed;
+    margin-top: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+        
+}
+
+.long{
+    display: :flex;
+/*
+    column-count:3;
+    column-gap:50px;
+*/
+    margin-left: 2%;
+    margin-right: 1%;
 }
 
 /*--------------------------animation------------------------------*/
@@ -157,7 +200,20 @@ img .col{
   100% { opacity: 0; }
 }
 
-
+.arrow{
+    min-height: 30px;
+    min-width: 30px;
+    transform: rotate(90deg);
+    width: 4%;
+    height: 4%;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    
+   -webkit-animation: blink 5s infinite; /* Safari 4+ */
+      -moz-animation: blink 5s infinite; /* Fx 5+ */
+        -o-animation: blink 5s infinite; /* Opera 12+ */
+           animation: blink 5s infinite; /* IE 10+, Fx 29+ */
+}
 
 
 /*-------------------------Contact Form--------------------------*/
@@ -193,13 +249,6 @@ textarea:focus {
 }
 
 
-/*-------------------------Navigation---------------------------*/
-
-nav a{
-    text-decoration: none;
-}
-
-
 /*------------------------Media Queries-------------------------*/
 
 @media (min-width: 768px) and (max-width: 768){
@@ -221,7 +270,24 @@ nav a{
     
 }
 
-@media (min-width: 1024px) and (min-width: 1140px){
+
+@media (min-width: 1024px){
+   .long{
+    display: :flex;
+        
+    column-count:3;
+    column-gap:60px;
+        
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3%;
+} 
+    
+}
+
+
+@media (min-width: 1024px) and (min-width: 1217px){
+    
     nav.row{
         margin: 10px 0;
         width: 100%;
@@ -232,8 +298,9 @@ nav a{
         margin-left: 90px;
         margin-right: 90px;
     }
-        .navlink{
-            font-size: 1.7em;
+    
+    .navlink{
+        font-size: 1.7em;
         }
     
     .content {
