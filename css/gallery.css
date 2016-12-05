@@ -29,8 +29,8 @@ figure {
 /*-----------------------------Gallery Styling--------------------------------------*/
 /*First Frame*/
 figure img {
-filter: grayscale(100%);
-transition: filter 1s;
+    filter: grayscale(100%);
+    transition: filter 1s;
 }
 
 

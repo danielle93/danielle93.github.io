@@ -219,27 +219,37 @@ main{
 /*-------------------------Contact Form--------------------------*/
 
 form {
-    background: #eaeaea;  
+    background: none;  
     padding: 10px;
+}
+
+textarea{
+    width:350px;
+    height: 150px;
+}
+
+label p{
+    margin: 0px;
 }
 
 label, input, textarea{
     display: block;
     margin: 10px;
-    transition: background .5s;
+    transition: background 1s;
 }
 
 input[type=submit]{
     background: rosybrown;
+    margin: 1em;
     border: none;
-    border-radius: 5px;
+    border-radius: 3em;
     color: #fff;
     padding: 10px;
     transition: background 1s;
 }
 
 input:hover[type=submit]{
-    background: black;
+    background: #373737;
 }
 
 input:focus,

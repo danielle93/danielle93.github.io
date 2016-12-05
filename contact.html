@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
+    <title>Danielle Roberson</title>
     
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
 </head>
-<body>
-    <nav class="row">
-        <a class="col" href="index.html">Home</a>
-        <a class="col" href="resume.html">Resume</a>
-        <a class="col" href="contact.html">Contact</a>
-        <a class="col" href="portfolio.html">Portfolio</a>
-    </nav>
+
+<body>    
+<!-----------------------------------------------Navigation--------------------------------------------------------->
+        <nav class="row">
+            <a class="col navlink" href="index.html">Home</a>
+            <a class="col navlink" href="resume.html">Resume</a>
+            <a class="col navlink" href="contact.html">Contact</a>   
+            <a id="portfolio" class="col navlink" href="portfolio.html">--Portfolio--</a>   
+        </nav>
     
-    <section class="row">
+<!-----------------------------------------------Form------------------------------------------------------->         
+       <section class="row">
     <form class="col" action="https://formspree.io/danielle.roberson@icloud.com"
           method="POST">
-          <label for="name">Name</label>
+          <label for="name"><p>Name:</p></label>
           <input type="text" name="name"/>
   
-          <label for="email">Email</label>
+          <label for="email"><p>Email:</p></label>
           <input type="text" name="email"/>
   
-          <label for="message">Message</label>
+          <label for="message"><p>Type your message below:</p></label>
           <textarea name="message"></textarea>
   
           <input type="submit" value="Let's keep in touch! &#10084;"/>
     </form>
     </section>
-   
-    <footer class="row"><p class="col">&#169; Danielle Roberson 2016 [f] [insta]</p></footer>
+                
+        
+        
+   <!------------------------------------------------Footer--------------------------------------------------------->
+    <footer class="row"><p class="footer">&#169; Danielle Roberson 2016 <a href="https://www.facebook.com/fvck0fff"><img class="ficon"src="img/facebook.svg" alt="Facebook Icon"></a> <a href="https://www.instagram.com/darlingdanielle/"><img class="ficon" src="img/instagram.svg" alt="Instagram Icon"></a></p></footer>
 </body>
 </html>
