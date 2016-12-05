@@ -244,7 +244,7 @@ label, input, textarea{
 
 input[type=submit]{
     background: rosybrown;
-    margin: 1em;
+    margin-left: 60%;
     border: none;
     border-radius: 3em;
     color: #fff;
