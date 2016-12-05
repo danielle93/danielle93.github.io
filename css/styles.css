@@ -69,6 +69,7 @@ a:active{
     transform: rotate(90deg);
     width: 4%;
     height: 4%;
+    margin-top: .5em;
     margin-bottom: .5em;
     
    -webkit-animation: blink 5s infinite; /* Safari 4+ */
