@@ -28,14 +28,14 @@ figure {
 
 /*-----------------------------Gallery Styling--------------------------------------*/
 /*First Frame*/
-figure img {
+figure .thumb {
     filter: grayscale(100%);
     transition: filter 1s;
 }
 
 
 /*Second Frame*/
-figure img:active{
+figure .thumb:active{
     filter: none;
 }
 
@@ -46,6 +46,7 @@ figure p {
 
 .thumb{
     height: 350px;
+    width: 350px;
 }
 
 
@@ -65,8 +66,10 @@ figure p {
   animation: fadeIn 1s;
 }
 
+
 .overlay img{
-    box-shadow: 0px 9px 21px -2px rgba(133,133,133,.5);
+    max-height: 80%;
+
 }
 
 /*****show*****/
@@ -86,10 +89,16 @@ figure p {
 }
 
 /*-----------------------------------Close Button-------------------------------*/
-.overlay a {
-  color: #000;
+.overlay a { 
+  color: #373737;
   text-decoration: none;
   font-size: 5em;
+}
+
+.icon{
+    margin-right: .4em;
+    width: .7em;
+    height: .7em;
 }
 
 /*------------------------------------Animation*---------------------------------*/
@@ -131,9 +140,10 @@ figure p {
         
     .thumb{
         max-height: 270px;
+        max-width: 270px;
     }
     
-    figure img:hover{
+    .thumb:hover{
     filter: none;
 }
 }
