@@ -6,8 +6,11 @@
 .gallery {
  display: flex;
  flex-wrap: wrap;
- justify-content: center
- width: 40%;
+ justify-content: center; 
+ margin-top: 3%;
+ margin-left: 10%;
+ margin-right: 10%;
+
 }
 
 figure {
@@ -116,9 +119,16 @@ figure p {
 }
 
 /*---------------------------------Media Queries--------------------------------*/
+@media (max-width: 1024px){
+.gallery {
+         margin-left: 40%;
+         margin-right: 40%;
+    }
+}
 
 @media (min-width: 1024px) and (min-width: 768px){
     
+        
     .thumb{
         max-height: 270px;
     }
