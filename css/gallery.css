@@ -162,14 +162,12 @@ figure p {
 .overlay img{
     max-width:98%;
     width: 920px;
-
 }
 
 /*****show*****/
 .overlay:target {
   display: block;
-
-
+    
 /*----------------------Flexbox Vertical & Horizontal Centering---------------*/
   z-index: 2;
   display: flex;
@@ -181,11 +179,29 @@ figure p {
   animation: fadeIn .5s;
 }
 
+/*---------------Caption--------------*/
+
+#caption p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#caption{
+    border-radius: .5em;
+    background: rgba(255,255,255,.5);
+    width: 90%;
+}
+
+#poachedidpkg{
+    max-height: 70%;
+    width: 500px;
+}
+
 /*-----------------------------------Close Button-------------------------------*/
 .overlay a { 
   color: #373737;
   text-decoration: none;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .row .icon{
@@ -194,9 +210,6 @@ figure p {
     height: .7em;
 }
 
-#resumedl{
-    
-}
 /*------------------------------------Animation*---------------------------------*/
 @-webkit-keyframes fadeIn {
   from {
@@ -226,26 +239,9 @@ figure p {
   animation-name: fadeIn;
 }
 
-/*---------------------------------Media Queries--------------------------------*/
-@media (width:0px){
-    #21{
-        display: none;
-    }
-}
+/*--------------------------------Media Queries---------------------------------*/
 
-@media (max-width: 1100px){
-    #21{
-        display: none;
-    }
-}
-
-@media (min-width: 1515px){
-    #21{
-        display: none;
-    }
-}
-
-@media (min-width: 1160px) and (min-width: 768px){
+@media (min-width: 1024px) and (min-width: 768px){
     .overlay img { max-width: 80%;
     }
         
@@ -259,4 +255,7 @@ figure p {
     outline: #C0B283 solid 5px;
     }
     
+    #caption{
+    width: 50%;
 }
+
